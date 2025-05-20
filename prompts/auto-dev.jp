@@ -1,0 +1,20 @@
+# Step 1: Issue
+<repository-name>に議論した内容のIssueをIssue作成ルールに従い作成してください。
+
+# Step 2: Branch
+作成したIssueとBranch作成ルールに従い、Git ToolsでBranchをmainから作成してください。必要であればGithubからIssueの内容を確認してください。その際はどのIssueを進めるかユーザーへ確認してください。
+
+# Step 3: Implementation
+Issueを基に、また実装ルールに従い実装を進めてください。実装が完了すれば、変更内容に合わせてテストを作成してください。
+
+# Step 4: Testing
+ローカルでテストを実行してください。テストが成功するまで修正・改善を行なってください。必要であればGit Toolsで差分を確認し、変更点を確認してください。各変更単位でテストが完了すれば、コミットルールに従いGit Toolsでコミットを行なってください。
+
+# Step 5: CI/CD YAML
+CI/CDのために、今回の実装内容を基に、YAML編集ルールに従い<yml-file-path>を編集してください。
+
+# Step 6: Push
+CI/CDテスト用YAMLファイルの編集内容をGit Toolsでコミット後、<repository-name>にブランチをプッシュしてください。
+
+# Step 7: Pull Request
+ユーザーからCI/CDのユニットテストが成功したことを確認できれば、プルリクエストをプルリクエスルールに従い作成してください。

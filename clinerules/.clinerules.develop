@@ -1,0 +1,51 @@
+# Project Development Rules
+
+## Issue Creation
+- Create issues with the following template:
+    - Title: "[Feature/Bug/Verify/...] Brief description"
+    - Body:
+        - Description (by default)
+        - Tasks (by default)
+        - Reference
+        - and so on...
+    - Labels: Add "todo" by default
+
+## Branch Creation
+- Branch name format: `<feature/bugfix/...>/<issue-number>-<shot-description>`
+- Create branches from `main`
+
+## Code Implementation
+- Generate unit tests for all new functions/components
+- Test files should be placed in `tests/` directory
+
+## Commit
+- Commit changes when:
+    - A logical unit of work is complete (e.g., function implementation, test case)
+    - Tests pass locally
+- Commit message format: `#[issue-number] Brief description of changes`
+
+## Testing
+- Run tests locally before committing
+- Ensure all tests pass before pushing
+
+## CI/CD YAML Editing
+- Update `.github/workflows/<>.yml` with:
+    - Branch name in `on.push.branches`
+    - Correct test command and file (e.g., `npm test` or `pytest`)
+
+## Push
+- Push after all local tests pass and CI/CD yaml edited
+
+## Pull Request Creation
+- PR title: `#[issue-number] Brief description`
+- PR body:
+    - Changes
+    - Tests
+    - Related Issues
+    - and so on...
+- Link PR to the corresponding issue
+- Ensure all CI/CD test pass by human before creating
+
+## Security
+- DO NOT commit sensitive files: `.env`, `secrets/*`, `*.pem`
+- Use environment variables for secrets

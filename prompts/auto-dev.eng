@@ -1,0 +1,20 @@
+# Step 1: Issue
+Create an issue in <repository-name> detailing the discussed content, following the issue creation rules.
+
+# Step 2: Branch
+Create a branch from main using Git Tools, according to the created issue and branch creation rules. If necessary, check the issue details on Github. In that case, confirm with the user which issue to proceed with.
+
+# Step 3: Implementation
+Proceed with the implementation based on the issue and in accordance with the implementation rules. Once the implementation is complete, create tests corresponding to the changes.
+
+# Step 4: Testing
+Run tests locally. Fix and improve until all tests pass. If necessary, use Git Tools to check the differences and review the changes. Once testing is complete for each unit of change, commit the changes using Git Tools, following the commit rules.
+
+# Step 5: CI/CD YAML
+For CI/CD, edit <yml-file-path> based on the current implementation, following the YAML editing rules.
+
+# Step 6: Push
+After commiting the changes to the CI/CD test YAML file using Git Tools, push the branch to <repository-name>.
+
+# Step 7: Pull Request
+Once you have confirmed with the user that the CI/CD unit tests have passed successfully, create a pull request according to the pull request rules.

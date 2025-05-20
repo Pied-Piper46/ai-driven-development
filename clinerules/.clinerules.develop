@@ -22,7 +22,7 @@
 - Commit changes when:
     - A logical unit of work is complete (e.g., function implementation, test case)
     - Tests pass locally
-- Commit message format: `#[issue-number] Brief description of changes`
+- Commit message format: `#<issue-number> Brief description of changes`
 
 ## Testing
 - Run tests locally before committing
@@ -33,11 +33,11 @@
     - Branch name in `on.push.branches`
     - Correct test command and file (e.g., `npm test` or `pytest`)
 
-## Push
-- Push after all local tests pass and CI/CD yaml edited
+## Commit & Push
+- Commit and Push after all local tests pass and CI/CD yaml edited
 
 ## Pull Request Creation
-- PR title: `#[issue-number] Brief description`
+- PR title: `#<issue-number> Brief description`
 - PR body:
     - Changes
     - Tests

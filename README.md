@@ -7,7 +7,7 @@
 
 ### Step 2: Branch
 ```
-作成したIssueとBranch作成ルールに従い、Git ToolsでBranchをmainから作成してください。必要であればGithubからIssueの内容を確認してください。その際はどのIssueを進めるかユーザーへ確認してください。
+作成したIssueとBranch作成ルールに従い、Git ToolsでBranchをmainから作成してください。Git Toolsを使用する際はrepo_pathを絶対パスで指定してください。必要であればGithubからIssueの内容を確認してください。その際はどのIssueを進めるかユーザーへ確認してください。
 ```
 
 ### Step 3: Implementation
